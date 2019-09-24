@@ -1,0 +1,22 @@
+
+ {
+  "manifest_version": 2,
+  "name": "extension_test",
+  "version": "1.0",
+
+   "description": "first test for an extension that highlights words from a given list and gives the definition i a tooltip",
+
+   "applications": {
+  "gecko": {
+    "id": "highlight@example.com"
+  }
+},
+
+  "content_scripts": [
+   {
+     "matches": ["<all_urls>"],
+     "js": ["glossary.js", "highlight.js"],
+     "css": ["highlight.css"]
+   }
+ ]
+}

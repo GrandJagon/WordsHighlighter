@@ -1,0 +1,25 @@
+.tooltip{
+  color: red;
+  display: inline-block;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  border: 0px;
+}
+
+ .tooltip .tooltipcontent{
+  visibility: hidden;
+  color:black;
+  position: absolute;
+  background-color: white;
+  border: black solid 1px;
+  width: 250px;
+  z-index: 1;
+  opacity: 0;
+  padding-left: 3px;
+}
+
+.tooltip:hover .tooltipcontent{
+  visibility: visible;
+  opacity: 1;
+}
